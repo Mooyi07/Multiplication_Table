@@ -1,15 +1,53 @@
-# Multiplication_Table
-Multiplication Table generator using java
-<br />
-OUTPUT:<br /> 
-<br />
-1  2  3  4  5  6  7  8  9 10 <br />
-2  4  6  8 10 12 14 16 18 20<br />
-3  6  9 12 15 18 21 24 27 30<br />
-4  8 12 16 20 24 28 32 36 40<br />
-5 10 15 20 25 30 35 40 45 50<br />
-6 12 18 24 30 36 42 48 54 60<br />
-7 14 21 28 35 42 49 56 63 70<br />
-8 16 24 32 40 48 56 64 72 80<br />
-9 18 27 36 45 54 63 72 81 90<br />
-10 20 30 40 50 60 70 80 90 100<br />
+# Multiplication Table Generator  
+
+## 📌 Description  
+This Java program generates a **multiplication table** of a specified number of rows and columns. It uses a 2D array to store the results and provides methods to retrieve the table dimensions and data.  
+
+## 🛠 Features  
+- Generates a multiplication table dynamically based on user input.  
+- Uses encapsulation with **getters** for table properties.  
+- Provides a structured and efficient way to compute multiplication values.  
+
+## 📺 File Structure  
+- `MultiplicationTable.java` – Defines the `MultiplicationTable` class with:  
+  - Private fields for rows, columns, and table storage.  
+  - A constructor to initialize the table size.  
+  - A method to generate multiplication values.  
+
+## 🚀 Usage  
+1. **Compile the Java file:**  
+   ```sh
+   javac MultiplicationTable.java
+   ```
+2. **Integrate with a main program:**  
+   ```java
+   public class Main {
+       public static void main(String[] args) {
+           MultiplicationTable table = new MultiplicationTable(5, 5);
+           int[][] result = table.getMultiplicationTable();
+           for (int[] row : result) {
+               for (int value : row) {
+                   System.out.print(value + "\t");
+               }
+               System.out.println();
+           }
+       }
+   }
+   ```
+3. **Run the program:**  
+   ```sh
+   java Main
+   ```
+
+## 📌 Example Output (5x5 Table)  
+```
+1   2   3   4   5  
+2   4   6   8   10  
+3   6   9   12  15  
+4   8   12  16  20  
+5   10  15  20  25  
+```
+
+## 🐜 License  
+This project is open-source and free to use.  
+
